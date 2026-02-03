@@ -93,14 +93,14 @@
 
         <div class="about-text">
           <p>
-            Welcome, wanderer. I am a <strong style="color:var(--gold-light)">passionate software developer</strong>
+            Hello everyone. I am a <strong style="color:var(--gold-light)">passionate software developer </strong>
             with over 3 years of experience conjuring digital solutions. Every line of code I write is a carefully
-            crafted incantation — purposeful, elegant, and alive.
+            crafted incantation — purposeful, elegant, and alive. Trying to be Quality Assurance nowadays.
           </p>
           <p>
-            I specialize in building full-stack applications and transforming complex requirements into intuitive,
-            user-friendly interfaces. When I'm not brewing code, you'll find me exploring new technologies and
-            perfecting my craft.
+            I specialize in building front end web applications that are not only visually enchanting but also
+            functionally robust. From sleek user interfaces to seamless user experiences, I weave together design and
+            technology to create digital products that captivate and engage.
           </p>
           <div class="about-stats">
             <div class="stat-item">
@@ -365,7 +365,7 @@
     <section id="contact"
       style="padding: 100px 24px; background: linear-gradient(180deg, transparent, rgba(92,26,42,0.06), transparent);">
       <div class="reveal">
-        <h2 class="section-title">Send an Owl</h2>
+        <h2 class="section-title">Send a Message</h2>
         <p class="section-subtitle">Start a conversation</p>
         <div class="ornament"><span class="ornament-icon">✦</span></div>
       </div>
@@ -380,14 +380,14 @@
             <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
             <div class="contact-detail-text">
               <div class="label">Email</div>
-              <div class="value">yourname@email.com</div>
+              <div class="value">andremilano16@email.com</div>
             </div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
             <div class="contact-detail-text">
               <div class="label">Phone</div>
-              <div class="value">+62 812 3456 7890</div>
+              <div class="value">+62 81239855577</div>
             </div>
           </div>
           <div class="contact-detail">
@@ -408,28 +408,30 @@
 
         <div class="reveal">
           <div class="glass-card" style="padding:36px 30px;">
-            <div class="contact-form">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your full name">
+            <form action="https://formspree.io/f/xeezdezz" method="POST">
+              <div class="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Your full name" name="name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="you@example.com" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="What's this about?" name="subject">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" placeholder="Cast your message here..." name="message"></textarea>
+                </div>
+                <button type="submit" class="btn-primary"
+                  style="justify-content:center; width:100%; border:none; font-size:0.78rem;">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
               </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="you@example.com">
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="What's this about?">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Cast your message here..."></textarea>
-              </div>
-              <button class="btn-primary" style="justify-content:center; width:100%; border:none; font-size:0.78rem;"
-                onclick="alert('Message sent! ✨')">
-                <i class="fas fa-paper-plane"></i> Send Message
-              </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
