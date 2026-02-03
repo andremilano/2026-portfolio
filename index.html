@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Wizard's Chamber</title>
+  <title>Portfolio — 静寂の部屋</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <style></style>
 </head>
 
 <body>
 
-  <!-- ─── Ambient Layers ─── -->
-  <div class="stars-layer"></div>
+  <div class="wave-pattern"></div>
   <div class="ambient-glow"></div>
   <canvas id="particles-canvas"></canvas>
 
-  <!-- ─── NAVBAR ─── -->
+  <!-- NAV -->
   <nav class="nav-bar">
-    <a href="#" class="nav-logo"><i class="fas fa-hat-wizard"></i> Andre Milano</a>
+    <a href="#" class="nav-logo"><span class="logo-kanji">静</span> Andre Milano</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -31,12 +28,10 @@
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-toggle" onclick="openMobileMenu()">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="nav-toggle" onclick="openMobileMenu()"><span></span><span></span><span></span></div>
   </nav>
 
-  <!-- ─── MOBILE MENU ─── -->
+  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-close" onclick="closeMobileMenu()">&times;</button>
     <a href="#about" onclick="closeMobileMenu()">About</a>
@@ -47,37 +42,39 @@
     <a href="#contact" onclick="closeMobileMenu()">Contact</a>
   </div>
 
-  <!-- ─── CONTENT ─── -->
   <div class="content-wrap">
 
     <!-- ════ HERO ════ -->
     <section class="hero-section" id="hero">
       <div class="hero-crest">
-        <span class="rune">✦</span>
-        <span class="rune">✧</span>
-        <span class="rune">✦</span>
-        <span class="rune">✧</span>
-        <i class="fas fa-hat-wizard"></i>
+        <span class="rune">花</span>
+        <span class="rune">風</span>
+        <span class="rune">月</span>
+        <span class="rune">山</span>
+        <span class="crest-kanji">匠</span>
       </div>
-      <h1 class="hero-name">Andre Milano</h1>
-      <p class="hero-title">Front End Web Developer | Quality Assurance</p>
+      <h1 class="hero-name">
+        Andre Milano
+        <span class="name-kanji">オーナーネーム</span>
+      </h1>
+      <p class="hero-title">Front End Web Developer &amp; Quality Assurance</p>
       <p class="hero-tagline">
-        Crafting Digital Product with Love & Precision
+        Crafting refined digital experiences with precision and intention — turning complex challenges into elegant,
+        purposeful solutions, one careful stroke at a time.
       </p>
-      <div style="display:flex; gap:16px; margin-top:36px; flex-wrap:wrap; justify-content:center;">
-        <a href="#projects" class="btn-primary"><i class="fas fa-scroll"></i> View My Project</a>
-        <a href="#contact" class="btn-outline"><i class="fas fa-envelope"></i> Send me Message</a>
+      <div style="display:flex;gap:16px;margin-top:38px;flex-wrap:wrap;justify-content:center;">
+        <a href="#projects" class="btn-primary"><i class="fas fa-th-large"></i> View My Work</a>
+        <a href="#contact" class="btn-outline"><i class="fas fa-envelope"></i> Get in Touch</a>
       </div>
     </section>
 
     <!-- ════ ABOUT ════ -->
-    <section id="about" style="padding: 100px 24px;">
+    <section id="about" style="padding:100px 24px;">
       <div class="reveal">
-        <h2 class="section-title">The Chamber of Secrets</h2>
-        <p class="section-subtitle">A glimpse behind the curtain</p>
-        <div class="ornament"><span class="ornament-icon">✦</span></div>
+        <h2 class="section-title"><span class="kanji-accent">自己紹介</span>About Me</h2>
+        <p class="section-subtitle">A quiet introduction</p>
+        <div class="ornament"><span class="ornament-icon">〇</span></div>
       </div>
-
       <div class="about-grid reveal" style="margin-top:56px;">
         <div class="about-image-wrap">
           <div class="about-accent tl"></div>
@@ -85,20 +82,14 @@
           <div class="about-accent bl"></div>
           <div class="about-accent br"></div>
           <div class="about-image-frame">
-            <!-- Replace src with your photo, or remove <img> to show placeholder icon -->
             <img src="img/profile-pic.jpeg" alt="Your Photo" />
             <!-- <i class="fas fa-user about-image-placeholder"></i> -->
           </div>
         </div>
-
         <div class="about-text">
-          <p>
-            Hello everyone. I am a <strong style="color:var(--gold-light)">passionate software developer </strong>
-            with over 3 years of experience conjuring digital solutions. Every line of code I write is a carefully
-            crafted incantation — purposeful, elegant, and alive. Trying to be Quality Assurance nowadays.
-          </p>
-          <p>
-            I specialize in building front end web applications that are not only visually enchanting but also
+          <p>Welcome. I am a <strong>dedicated software developer</strong> with over 3 years of experience building
+            digital products. Every project is approached with care, clarity, and a commitment to craftsmanship.</p>
+          <p>I specialize in building front end web applications that are not only visually enchanting but also
             functionally robust. From sleek user interfaces to seamless user experiences, I weave together design and
             technology to create digital products that captivate and engage.
           </p>
@@ -112,7 +103,7 @@
               <div class="stat-label">Projects</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">-</div>
+              <div class="stat-number">5+</div>
               <div class="stat-label">Clients</div>
             </div>
           </div>
@@ -122,64 +113,49 @@
 
     <!-- ════ SKILLS ════ -->
     <section id="skills"
-      style="padding: 100px 24px; background: linear-gradient(180deg, transparent, rgba(92,26,42,0.08), transparent);">
+      style="padding:100px 24px;background:linear-gradient(180deg,transparent,rgba(194,57,43,0.03),transparent);">
       <div class="reveal">
-        <h2 class="section-title">The Skills</h2>
-        <p class="section-subtitle">Mastered arts & incantations</p>
-        <div class="ornament"><span class="ornament-icon">✦</span></div>
+        <h2 class="section-title"><span class="kanji-accent">技術</span>Skills</h2>
+        <p class="section-subtitle">Refined abilities &amp; expertise</p>
+        <div class="ornament"><span class="ornament-icon">〇</span></div>
       </div>
-
       <div class="skills-grid" style="margin-top:56px;">
-        <!-- Skill 1 -->
-        <div class="glass-card skill-card reveal" data-skill="85">
+        <div class="glass-card skill-card reveal">
           <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
           <h4>Frontend Dev</h4>
-          <p>React, Vue, HTML5 & CSS3 — weaving user interfaces that mesmerize.</p>
+          <p>React, HTML5 &amp; CSS3 — building interfaces with precision.</p>
           <div class="skill-bar-bg">
             <div class="skill-bar-fill" style="--skill-width:85%"></div>
           </div>
         </div>
-        <!-- Skill 2 -->
-        <div class="glass-card skill-card reveal" data-skill="80">
+        <div class="glass-card skill-card reveal">
           <div class="skill-icon-wrap"><i class="fas fa-server"></i></div>
           <h4>Backend Dev</h4>
-          <p>Node.js, Python, Express — the dark arts of server-side logic.</p>
+          <p>Node.js, Python, Express &amp; PHP — the foundation of every product.</p>
           <div class="skill-bar-bg">
             <div class="skill-bar-fill" style="--skill-width:80%"></div>
           </div>
         </div>
-        <!-- Skill 3 -->
-        <div class="glass-card skill-card reveal" data-skill="75">
+        <div class="glass-card skill-card reveal">
           <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
           <h4>Databases</h4>
-          <p>MongoDB, PostgreSQL — storing secrets in organized vaults.</p>
+          <p>MongoDB, MySQL — structuring data with clarity.</p>
           <div class="skill-bar-bg">
             <div class="skill-bar-fill" style="--skill-width:75%"></div>
           </div>
         </div>
-        <!-- Skill 4 -->
-        <div class="glass-card skill-card reveal" data-skill="70">
-          <div class="skill-icon-wrap"><i class="fas fa-palette"></i></div>
-          <h4>UI / UX Design</h4>
-          <p>Figma, wireframing — designing enchanting user journeys.</p>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-width:70%"></div>
-          </div>
-        </div>
-        <!-- Skill 5 -->
-        <div class="glass-card skill-card reveal" data-skill="78">
+        <div class="glass-card skill-card reveal">
           <div class="skill-icon-wrap"><i class="fas fa-docker"></i></div>
           <h4>DevOps</h4>
-          <p>Docker, Git, CI/CD — orchestrating deployments like potions.</p>
+          <p>Git, CI/CD — streamlining the deployment process.</p>
           <div class="skill-bar-bg">
             <div class="skill-bar-fill" style="--skill-width:78%"></div>
           </div>
         </div>
-        <!-- Skill 6 -->
-        <div class="glass-card skill-card reveal" data-skill="72">
+        <div class="glass-card skill-card reveal">
           <div class="skill-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
           <h4>Mobile Apps</h4>
-          <p>React Native — casting spells across platforms seamlessly.</p>
+          <p>Kotlin — seamless experiences across all platforms.</p>
           <div class="skill-bar-bg">
             <div class="skill-bar-fill" style="--skill-width:72%"></div>
           </div>
@@ -188,15 +164,13 @@
     </section>
 
     <!-- ════ PROJECTS ════ -->
-    <section id="projects" style="padding: 100px 24px;">
+    <section id="projects" style="padding:100px 24px;">
       <div class="reveal">
-        <h2 class="section-title">The Forbidden Library</h2>
-        <p class="section-subtitle">Notable enchantments & creations</p>
-        <div class="ornament"><span class="ornament-icon">✦</span></div>
+        <h2 class="section-title"><span class="kanji-accent">作品</span>Projects</h2>
+        <p class="section-subtitle">Selected works &amp; creations</p>
+        <div class="ornament"><span class="ornament-icon">〇</span></div>
       </div>
-
       <div class="projects-grid" style="margin-top:56px;">
-        <!-- Project 1 -->
         <div class="glass-card project-card reveal">
           <div class="project-image">
             <!-- <img src="project1.jpg" alt="Project 1" /> -->
@@ -205,21 +179,14 @@
           </div>
           <div class="project-body">
             <h3>Project Title One</h3>
-            <div class="tech-tags">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">MongoDB</span>
-            </div>
+            <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span
+                class="tech-tag">MongoDB</span></div>
             <p>A full-stack application that manages user workflows with real-time collaboration features and an
               intuitive dashboard.</p>
-            <div class="project-links">
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            </div>
+            <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="#"><i
+                  class="fab fa-github"></i> GitHub</a></div>
           </div>
         </div>
-
-        <!-- Project 2 -->
         <div class="glass-card project-card reveal">
           <div class="project-image">
             <!-- <img src="project2.jpg" alt="Project 2" /> -->
@@ -228,21 +195,14 @@
           </div>
           <div class="project-body">
             <h3>Project Title Two</h3>
-            <div class="tech-tags">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Firebase</span>
-              <span class="tech-tag">Redux</span>
-            </div>
+            <div class="tech-tags"><span class="tech-tag">React Native</span><span class="tech-tag">Firebase</span><span
+                class="tech-tag">Redux</span></div>
             <p>A cross-platform mobile app with push notifications, offline support, and seamless cloud synchronization.
             </p>
-            <div class="project-links">
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            </div>
+            <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="#"><i
+                  class="fab fa-github"></i> GitHub</a></div>
           </div>
         </div>
-
-        <!-- Project 3 -->
         <div class="glass-card project-card reveal">
           <div class="project-image">
             <!-- <img src="project3.jpg" alt="Project 3" /> -->
@@ -251,90 +211,78 @@
           </div>
           <div class="project-body">
             <h3>Project Title Three</h3>
-            <div class="tech-tags">
-              <span class="tech-tag">Vue.js</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">PostgreSQL</span>
-            </div>
+            <div class="tech-tags"><span class="tech-tag">Vue.js</span><span class="tech-tag">Python</span><span
+                class="tech-tag">PostgreSQL</span></div>
             <p>An analytics dashboard with data visualization, filterable reports, and automated insight generation.</p>
-            <div class="project-links">
-              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-              <a href="#"><i class="fab fa-github"></i> GitHub</a>
-            </div>
+            <div class="project-links"><a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a><a href="#"><i
+                  class="fab fa-github"></i> GitHub</a></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ════ EXPERIENCE / TIMELINE ════ -->
+    <!-- ════ EXPERIENCE ════ -->
     <section id="experience"
-      style="padding: 100px 24px; background: linear-gradient(180deg, transparent, rgba(92,26,42,0.06), transparent);">
+      style="padding:100px 24px;background:linear-gradient(180deg,transparent,rgba(194,57,43,0.035),transparent);">
       <div class="reveal">
-        <h2 class="section-title">The Map of Marauders</h2>
-        <p class="section-subtitle">My journey through the wizarding world</p>
-        <div class="ornament"><span class="ornament-icon">✦</span></div>
+        <h2 class="section-title"><span class="kanji-accent">経験</span>Experience</h2>
+        <p class="section-subtitle">The path that shaped me</p>
+        <div class="ornament"><span class="ornament-icon">〇</span></div>
       </div>
-
       <div class="timeline" style="margin-top:60px;">
-        <!-- Experience 1 -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
-            <div class="timeline-date">Jan 2023 — Present</div>
-            <h3>Senior Developer</h3>
-            <div class="company">Acme Tech Company</div>
-            <p>Led the development of internal tools and micro-services, improving system performance by 40%.</p>
+            <div class="timeline-date">Aug 2025 — Present</div>
+            <h3>Software Quality Assurance Intern</h3>
+            <div class="company">Techno Infinity</div>
+            <p>Developing automation testing, updating optimal test cases and make sure the product free from major or
+              minor bug</p>
           </div>
         </div>
-        <!-- Experience 2 -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
-            <div class="timeline-date">Mar 2021 — Dec 2022</div>
-            <h3>Full-Stack Developer</h3>
-            <div class="company">Digital Agency XYZ</div>
-            <p>Built client-facing web platforms from scratch, delivering 10+ projects on time and under budget.</p>
+            <div class="timeline-date">Feb 2025 — Jun 2025</div>
+            <h3>Java & Data Structure, Web Dev and Java Teaching Assistance</h3>
+            <div class="company">Telkom University</div>
+            <p>Assisted the lecturer in practical session for Data Structure, and web development</p>
           </div>
         </div>
-        <!-- Experience 3 -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
-            <div class="timeline-date">Jun 2020 — Feb 2021</div>
-            <h3>Junior Developer</h3>
-            <div class="company">StartUp Venture Co.</div>
-            <p>Contributed to frontend and backend features, collaborated closely with cross-functional teams.</p>
+            <div class="timeline-date">Sep 2024 — Jan 2025</div>
+            <h3>Basic Java Teaching Assistance</h3>
+            <div class="company">Telkom University</div>
+            <p>Assisted the lecturer in practical session for Basic Java Fundamental</p>
           </div>
         </div>
-        <!-- Education -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="glass-card timeline-card">
-            <div class="timeline-date">2016 — 2020</div>
-            <h3>Bachelor of Computer Science</h3>
-            <div class="company">University of Technology</div>
-            <p>Graduated with honors. Focused on software engineering and human-computer interaction.</p>
+            <div class="timeline-date">2019 — 2022</div>
+            <h3>Graduated Software Engineering Student</h3>
+            <div class="company">SMKN 1 Negara</div>
+            <p>Graduated with honors, ranked 1 in SNMPTN Eligible list. Focused on software engineering and human.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ════ TESTIMONIALS ════ -->
-    <section id="testimonials" style="padding: 100px 24px;">
+    <section id="testimonials" style="padding:100px 24px;">
       <div class="reveal">
-        <h2 class="section-title">The prophecies</h2>
-        <p class="section-subtitle">Words from the wise</p>
-        <div class="ornament"><span class="ornament-icon">✦</span></div>
+        <h2 class="section-title"><span class="kanji-accent">お言葉</span>Testimonials</h2>
+        <p class="section-subtitle">Kind words from others</p>
+        <div class="ornament"><span class="ornament-icon">〇</span></div>
       </div>
-
       <div class="testimonials-wrap" style="margin-top:56px;">
-        <!-- Testimonial 1 -->
         <div class="glass-card testimonial-card reveal">
           <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">
-            An incredibly talented developer who consistently delivers exceptional work. Their attention to detail and
-            ability to translate complex requirements into elegant solutions is truly remarkable.
-          </p>
+          <p class="testimonial-text">An incredibly talented developer who consistently delivers exceptional work. Their
+            attention to detail and ability to translate complex requirements into elegant solutions is truly
+            remarkable.</p>
           <div class="testimonial-author">
             <div class="author-avatar"><i class="fas fa-user"></i></div>
             <div>
@@ -343,13 +291,10 @@
             </div>
           </div>
         </div>
-        <!-- Testimonial 2 -->
         <div class="glass-card testimonial-card reveal">
           <div class="testimonial-quote">"</div>
-          <p class="testimonial-text">
-            Working with them was a pleasure from start to finish. They brought creative ideas to the table and executed
-            everything with precision. Highly recommend for any ambitious project.
-          </p>
+          <p class="testimonial-text">Working with them was a pleasure from start to finish. They brought creative ideas
+            to the table and executed everything with precision. Highly recommend for any ambitious project.</p>
           <div class="testimonial-author">
             <div class="author-avatar"><i class="fas fa-user"></i></div>
             <div>
@@ -363,19 +308,16 @@
 
     <!-- ════ CONTACT ════ -->
     <section id="contact"
-      style="padding: 100px 24px; background: linear-gradient(180deg, transparent, rgba(92,26,42,0.06), transparent);">
+      style="padding:100px 24px;background:linear-gradient(180deg,transparent,rgba(194,57,43,0.035),transparent);">
       <div class="reveal">
-        <h2 class="section-title">Send a Message</h2>
-        <p class="section-subtitle">Start a conversation</p>
-        <div class="ornament"><span class="ornament-icon">✦</span></div>
+        <h2 class="section-title"><span class="kanji-accent">お問い合わせ</span>Contact</h2>
+        <p class="section-subtitle">Let's start a conversation</p>
+        <div class="ornament"><span class="ornament-icon">〇</span></div>
       </div>
-
       <div class="contact-grid" style="margin-top:56px;">
         <div class="contact-info reveal">
           <h3>Let's Work Together</h3>
-          <p>Have a project in mind or just want to say hello? My owl post is always open. Don't hesitate to reach out.
-          </p>
-
+          <p>Have a project in mind or simply want to connect? I would be glad to hear from you. Reach out anytime.</p>
           <div class="contact-detail">
             <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
             <div class="contact-detail-text">
@@ -387,7 +329,7 @@
             <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
             <div class="contact-detail-text">
               <div class="label">Phone</div>
-              <div class="value">+62 81239855577</div>
+              <div class="value">+6281239855577</div>
             </div>
           </div>
           <div class="contact-detail">
@@ -397,41 +339,29 @@
               <div class="value">Bandung, West Java, Indonesia</div>
             </div>
           </div>
-
-          <div class="social-links" style="margin-top:32px; justify-content:flex-start;">
+          <div class="social-links" style="margin-top:32px;justify-content:flex-start;">
             <a href="#" class="social-link"><i class="fab fa-github"></i></a>
             <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
           </div>
         </div>
-
         <div class="reveal">
           <div class="glass-card" style="padding:36px 30px;">
-            <form action="https://formspree.io/f/xeezdezz" method="POST">
-              <div class="contact-form">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Your full name" name="name">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="you@example.com" name="email">
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" id="subject" placeholder="What's this about?" name="subject">
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" placeholder="Cast your message here..." name="message"></textarea>
-                </div>
-                <button type="submit" class="btn-primary"
-                  style="justify-content:center; width:100%; border:none; font-size:0.78rem;">
-                  <i class="fas fa-paper-plane"></i> Send Message
-                </button>
-              </div>
-            </form>
+            <div class="contact-form">
+              <div class="form-group"><label for="name">Name</label><input type="text" id="name"
+                  placeholder="Your full name"></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email"
+                  placeholder="you@example.com"></div>
+              <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject"
+                  placeholder="What would you like to discuss?"></div>
+              <div class="form-group"><label for="message">Message</label><textarea id="message"
+                  placeholder="Write your message here..."></textarea></div>
+              <button class="btn-primary" style="justify-content:center;width:100%;font-size:0.74rem;"
+                onclick="alert('Message sent! ✉️')">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -439,131 +369,116 @@
 
     <!-- ════ FOOTER ════ -->
     <footer class="footer">
-      <div class="footer-logo"><i class="fas fa-hat-wizard"></i> YourName</div>
-      <div class="ornament" style="max-width:300px; margin:12px auto;"><span class="ornament-icon">✦</span></div>
-      <p>© 2025 YourName. All rights reserved. Crafted with dark magic & caffeine.</p>
-      <div class="social-links" style="margin-top:18px;">
+      <div class="footer-logo"><span class="footer-kanji">静</span> Andre Milano</div>
+      <div class="ornament" style="max-width:260px;margin:14px auto;"><span class="ornament-icon">〇</span></div>
+      <p>© 2025 YourName. All rights reserved. Built with care &amp; intention.</p>
+      <div class="social-links" style="margin-top:20px;">
         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
         <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
       </div>
     </footer>
-  </div><!-- end content-wrap -->
+  </div>
 
   <!-- ─── SCRIPTS ─── -->
   <script>
-    // ─── Floating Particles (Magical Dust) ───
+    // ── Cherry Blossom Particles ──
     (function () {
       const canvas = document.getElementById('particles-canvas');
       const ctx = canvas.getContext('2d');
-      let particles = [], W, H;
-
+      let petals = [], W, H;
       function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-      window.addEventListener('resize', resize);
-      resize();
+      window.addEventListener('resize', resize); resize();
 
-      class Particle {
-        constructor() {
-          this.reset();
-        }
-        reset() {
-          this.x = Math.random() * W;
-          this.y = Math.random() * H;
-          this.size = Math.random() * 2.2 + 0.4;
-          this.speedY = -(Math.random() * 0.35 + 0.08);
-          this.speedX = (Math.random() - 0.5) * 0.18;
-          this.opacity = Math.random() * 0.35 + 0.05;
-          this.hue = Math.random() > 0.6 ? 42 : 10; // gold or warm
+      class Petal {
+        constructor() { this.reset(true); }
+        reset(init) {
+          this.x = init ? Math.random() * W : -30;
+          this.y = init ? Math.random() * H : -30;
+          this.size = Math.random() * 3.2 + 1.2;
+          this.speedX = Math.random() * 1.0 + 0.3;
+          this.speedY = Math.random() * 0.45 + 0.15;
+          this.wobble = Math.random() * Math.PI * 2;
+          this.wobbleSpeed = Math.random() * 0.024 + 0.012;
+          this.wobbleAmp = Math.random() * 1.2 + 0.5;
+          this.opacity = Math.random() * 0.34 + 0.18;
+          this.rotation = Math.random() * Math.PI * 2;
+          this.rotSpeed = (Math.random() - 0.5) * 0.04;
+          const pinks = [[228, 156, 168], [216, 138, 153], [243, 183, 193], [198, 118, 138]];
+          this.color = pinks[Math.floor(Math.random() * pinks.length)];
         }
         update() {
+          this.wobble += this.wobbleSpeed;
+          this.x += this.speedX + Math.sin(this.wobble) * this.wobbleAmp;
           this.y += this.speedY;
-          this.x += this.speedX;
-          if (this.y < -10) { this.y = H + 10; this.x = Math.random() * W; }
-          if (this.x < -10) this.x = W + 10;
-          if (this.x > W + 10) this.x = -10;
+          this.rotation += this.rotSpeed;
+          if (this.x > W + 40 || this.y > H + 40) this.reset(false);
         }
         draw() {
           ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate(this.rotation);
           ctx.globalAlpha = this.opacity;
-          ctx.fillStyle = `hsl(${this.hue}, 60%, 70%)`;
-          ctx.shadowColor = `hsl(${this.hue}, 70%, 60%)`;
-          ctx.shadowBlur = 6;
+          const [r, g, b] = this.color;
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+          ctx.shadowColor = `rgba(${r},${g},${b},0.35)`;
+          ctx.shadowBlur = 4;
+          // two-lobe petal
           ctx.beginPath();
-          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.ellipse(-this.size * 0.3, 0, this.size * 0.55, this.size * 0.27, -0.38, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.beginPath();
+          ctx.ellipse(this.size * 0.3, 0, this.size * 0.55, this.size * 0.27, 0.38, 0, Math.PI * 2);
           ctx.fill();
           ctx.restore();
         }
       }
 
-      for (let i = 0; i < 70; i++) particles.push(new Particle());
-
-      function animate() {
-        ctx.clearRect(0, 0, W, H);
-        particles.forEach(p => { p.update(); p.draw(); });
-        requestAnimationFrame(animate);
-      }
+      for (let i = 0; i < 55; i++) petals.push(new Petal());
+      function animate() { ctx.clearRect(0, 0, W, H); petals.forEach(p => { p.update(); p.draw(); }); requestAnimationFrame(animate); }
       animate();
     })();
 
-    // ─── Scroll Reveal ───
+    // ── Scroll Reveal ──
     (function () {
-      const reveals = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, i) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => entry.target.classList.add('visible'), i * 120);
-            observer.unobserve(entry.target);
-          }
-        });
+      const els = document.querySelectorAll('.reveal');
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 120); obs.unobserve(e.target); } });
       }, { threshold: 0.15 });
-      reveals.forEach(el => observer.observe(el));
+      els.forEach(el => obs.observe(el));
     })();
 
-    // ─── Skill Bar Animate on Scroll ───
+    // ── Skill Bars ──
     (function () {
       const bars = document.querySelectorAll('.skill-bar-fill');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-            observer.unobserve(entry.target);
-          }
-        });
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('animate'); obs.unobserve(e.target); } });
       }, { threshold: 0.4 });
-      bars.forEach(bar => observer.observe(bar));
+      bars.forEach(b => obs.observe(b));
     })();
 
-    // ─── Mobile Menu ───
+    // ── Mobile Menu ──
     function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
     function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 
-    // ─── Navbar shrink on scroll ───
+    // ── Nav shrink ──
     (function () {
       const nav = document.querySelector('.nav-bar');
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 60) {
-          nav.style.padding = '10px 32px';
-          nav.style.background = 'rgba(15,10,8,0.92)';
-        } else {
-          nav.style.padding = '18px 32px';
-          nav.style.background = 'rgba(15,10,8,0.75)';
-        }
+        if (window.scrollY > 60) { nav.style.padding = '10px 32px'; nav.style.background = 'rgba(250,247,242,0.94)'; }
+        else { nav.style.padding = '18px 32px'; nav.style.background = 'rgba(250,247,242,0.82)'; }
       });
     })();
 
-    // ─── Smooth anchor scroll (offset for navbar) ───
+    // ── Smooth scroll ──
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          const offset = 70;
-          const y = target.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' }); }
       });
     });
+
   </script>
 </body>
 
