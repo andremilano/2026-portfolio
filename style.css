@@ -19,8 +19,8 @@
   --vermillion-light: #e8736a;
   --vermillion-dark: #8b2318;
   --ink: #2c2420;
-  --body: #5a504a;
-  --muted: #908880;
+  --body: #433c37;
+  --muted: #696560;
   --bg: #faf7f2;
   --warm-mid: #efe8df;
   --card-bg: #ffffff;
@@ -426,7 +426,7 @@ body {
   margin-top: 18px;
   text-align: center;
   letter-spacing: 0.06em;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .hero-tagline {
